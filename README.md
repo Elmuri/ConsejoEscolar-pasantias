@@ -25,3 +25,14 @@
 <p align="center">
 Sistema desarrollado durante las practicas profesionalizantes 
 </p>
+
+<h1 align="left">Notas</h1>
+<a href="Notas.md" align="left">
+  Notas.
+</a>
+
+<h1 align="left">Instalación</h1>
+<p align="left">
+ 
+</p>
+
