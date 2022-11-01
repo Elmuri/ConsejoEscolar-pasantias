@@ -48,13 +48,13 @@ Sistema desarrollado durante las practicas profesionalizantes ir a l otro <a hre
   <img src="https://i.imgur.com/0G09lSg.png">
   <p>2 - Colocondo los archivos descargados en el htdocs de xampp. (en caso de clonar el repo lo tienen que clonar en el htdocs)</p>
   <img src="https://i.imgur.com/gM3J5Ws.png">
-  <p>3 - Activamos el xampp para ver los archivo en el localhost.</p>
+  <p>3 - Activamos el xampp para ver los archivos en el localhost.</p>
   <img src="https://i.imgur.com/4G16FUL.png">
-  <p>4 - Creamos la db (consejo_escolar_db) e inportamos la base de datos que esta en el proyecto.</p>
+  <p>4 - Creamos la DB (consejo_escolar_db) y inportamos la base de datos que esta en el proyecto.</p>
   <img src="https://i.imgur.com/3oTptdE.png">
-  <p>5 - Visualizamos que el ambiente de trabajo se pueda visualizar.</p>
+  <p>5 - Confirmamos que el ambiente de trabajo se pueda visualizar.</p>
   <img src="https://i.imgur.com/EWWy6ZI.png">
   <p style="color:red;Font-size:10px; margin-top:30px;">
-    Recordar lo explicado en notas la carpeta si o si debe nombrarse [ConsejoEscolar-pasantias] o cambie la direcciones absolutas de heder.php
+    Recordar lo explicado en notas la carpeta si o si debe nombrarse [ConsejoEscolar-pasantias] o cambie la direcciones absolutas de header.php
   </p>
 </div>
