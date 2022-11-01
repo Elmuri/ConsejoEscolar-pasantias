@@ -1,6 +1,6 @@
 # NOTAS
 
-### El heder como otras partes del programa utiliza rutas absolutas (/ConsejoEscolar-pasantias/index.php), en otras palabras si se quiere cambiar el nombre de la carpeta base recurden cambiar el nombre de las rutas absolutas (mas que nada estas rutas sule utilizarse en el heder devido a que es una divicion del codigo para no tener que escribir lo mismo en todos los php).
+- El heder como otras partes del programa utiliza rutas absolutas (/ConsejoEscolar-pasantias/index.php), en otras palabras si se quiere cambiar el nombre de la carpeta base recurden cambiar el nombre de las rutas absolutas (mas que nada estas rutas sule utilizarse en el heder devido a que es una divicion del codigo para no tener que escribir lo mismo en todos los php).
 
 # Faltarian agrear las siguientes funcionalidades al programa
 
