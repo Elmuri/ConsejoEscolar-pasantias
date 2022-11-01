@@ -48,8 +48,6 @@ if (is_countable($result_pedidos)) {
             <?php endforeach; ?>
         <?php endif; ?>
     </div>
-
-    <?php include 'sub/div/footer.php'; ?>
 </body>
 
 </html>

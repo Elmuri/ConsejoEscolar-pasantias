@@ -30,8 +30,7 @@ $(document).on('submit', '#form_log', function (event) {
                 }, 3000);
             } else {
                 Toastify({
-                    text: "La contraseña es incorrecta",
-                    duration: 4000,
+                    text: respuesta["mensaje"],
                     gravity: "top", // `top` or `bottom`
                     position: "right", // `left`, `center` or `right`
                     style: {
@@ -43,7 +42,7 @@ $(document).on('submit', '#form_log', function (event) {
             }
             if (respuesta["error"] == null) {
                     Toastify({
-                        text: "La sesion ya fue iniciada",
+                        text: respuesta["mensaje"],
                         duration: 4000,
                         gravity: "top", // `top` or `bottom`
                         position: "right", // `left`, `center` or `right`
@@ -62,7 +61,7 @@ $(document).on('submit', '#form_log', function (event) {
     .fail(function (resp) {
         // console.log(resp)        
         Toastify({
-            text: "Los datos ingresados no son validos",
+            text: resp[mensaje],
             duration: 4000,
             gravity: "top", // `top` or `bottom`
             position: "right", // `left`, `center` or `right`

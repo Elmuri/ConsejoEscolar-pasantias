@@ -20,41 +20,41 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-light shadow p-4">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/proyectos/ConsejoEscolar%20Original/index.php">Consejo Escolar</a>
+            <a class="navbar-brand" href="/consejoEscolar-Pasantias/index.php">Consejo Escolar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <?php if (isset($_SESSION['usuario']) && $_SERVER['REQUEST_URI'] != "/proyectos/ConsejoEscolar%20Original/index.php") : ?>
+                    <?php if (isset($_SESSION['usuario']) && $_SERVER['REQUEST_URI'] != "/consejoEscolar-Pasantias/index.php") : ?>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/proyectos/ConsejoEscolar Original/index.php">Home</a>
+                            <a class="nav-link" aria-current="page" href="/consejoEscolar-Pasantias/index.php">Home</a>
                         </li>
                         <?php endif; ?>
                         <?php if (isset($_SESSION['usuario'])) : ?>
-                        <?php if ($_SERVER['REQUEST_URI'] != "/proyectos/ConsejoEscolar%20Original/sub/CrearPedido.php") : ?>
+                        <?php if ($_SERVER['REQUEST_URI'] != "/consejoEscolar-Pasantias/sub/CrearPedido.php") : ?>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="/proyectos/ConsejoEscolar Original/sub/CrearPedido.php">Nuevo pedido</a>
+                                <a class="nav-link" aria-current="page" href="/consejoEscolar-Pasantias/sub/CrearPedido.php">Nuevo pedido</a>
                             </li>
                         <?php endif; ?>
-                        <?php if ($_SERVER['REQUEST_URI'] != "/proyectos/ConsejoEscolar%20Original/sub/AgregarEscuela.php") : ?>
+                        <?php if ($_SERVER['REQUEST_URI'] != "/consejoEscolar-Pasantias/sub/AgregarEscuela.php") : ?>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="/proyectos/ConsejoEscolar Original/sub/AgregarEscuela.php">Agregar escuela</a>
+                                <a class="nav-link" aria-current="page" href="/consejoEscolar-Pasantias/sub/AgregarEscuela.php">Agregar escuela</a>
                             </li>
                         <?php endif; ?>
                         <?php
-                        if ($_SERVER['REQUEST_URI'] != '/proyectos/ConsejoEscolar%20Original/sub/ver_editar_escuelas.php') : ?>
+                        if ($_SERVER['REQUEST_URI'] != '/consejoEscolar-Pasantias/sub/ver_editar_escuelas.php') : ?>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="/proyectos/ConsejoEscolar Original/sub/ver_editar_escuelas.php">Ver | editar escuelas</a>
+                                <a class="nav-link" aria-current="page" href="/consejoEscolar-Pasantias/sub/ver_editar_escuelas.php">Ver | editar escuelas</a>
                             </li>
                         <?php endif; ?>
                     <?php endif; ?>
                     <?php if (!isset($_SESSION['usuario'])) : ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="/proyectos/ConsejoEscolar Original/sub/login.php">login</a>
+                            <a class="nav-link" href="/consejoEscolar-Pasantias/sub/login.php">login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/proyectos/ConsejoEscolar Original/sub/registro.php">Registro</a>
+                            <a class="nav-link" href="/consejoEscolar-Pasantias/sub/registro.php">Registro</a>
                         </li>
                     <?php endif; ?>
                     <div class="d-flex justify-content-end me-auto">
@@ -63,7 +63,7 @@
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                                     <?php echo $_SESSION['usuario'] ?></a>
                                 <ul class="dropdown-menu dropdown-menu-end">
-                                    <li><a class="dropdown-item" href="/proyectos/ConsejoEscolar Original/sub/exit.php">Cerrar Sesión</a></li>
+                                    <li><a class="dropdown-item" href="/consejoEscolar-Pasantias/sub/exit.php">Cerrar Sesión</a></li>
                                 </ul>
                             </li>
                         <?php endif; ?>
