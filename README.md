@@ -25,14 +25,26 @@
 <p align="center">
 Sistema desarrollado durante las practicas profesionalizantes 
 </p>
+<div align="left">
+  <h1>Notas</h1>
+   <p><a href="https://github.com/Elmuri/ConsejoEscolar-pasantias/blob/main/Notes.md">Notas.</a> En este apartado podran encontrar las funciones que se quisieron implementar e no se lograron como cambios a realizar.</p>
+</div>
 
-<h1 align="left">Notas</h1>
-<a href="Notas.md" align="left">
-  Notas.
-</a>
+<div align="left">
+  <h1>Requerimientos</h1>
+  <ul>
+    <li>XAMPP</li>
+    <li>PHP</li>
+    <li>EDITOR DE CODIGO</li>
+  </ul>
+</div>
 
-<h1 align="left">Instalación</h1>
-<p align="left">
- 
-</p>
-
+<div align="left">
+  <h1>Instalación</h1>
+  <p>
+    Puede clonar el repositorio mediante la app de git, o tambien puede descargar el codigo del repositorio e pegarlos en htdocs de xampp.
+  </p>
+  <p>
+    Recordar lo explicado en notas la carpeta si o si debe nombrarse [ConsejoEscolar-pasantias] o cambie la direcciones absolutas de heder.php
+  </p>
+</div>
