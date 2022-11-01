@@ -1,5 +1,6 @@
 <?php
 include 'db/conexion.php';
+// FIXME - tendria que cambiarse para ser utilizado con ajax
 if (isset($_GET['id'])) {
 
     $escuela = $conn->prepare("SELECT * FROM escuelas where id=:id");

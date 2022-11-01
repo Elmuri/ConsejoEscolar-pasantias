@@ -1,5 +1,6 @@
 <?php
 include './db/conexion.php';
+// FIXME - tendria que cambiarse para ser utilizado con ajax
     if(isset($_POST['Aregar'])){
 
         $sql= $conn->prepare('INSERT INTO `escuelas`(`nombre`, `dirección`, `email`, `responsable`,`tel`) VALUES (?, ?, ?, ?, ?)');

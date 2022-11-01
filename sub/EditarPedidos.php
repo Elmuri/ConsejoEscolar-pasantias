@@ -1,5 +1,6 @@
 <?php
 include 'db/conexion.php';
+// FIXME - tendria que cambiarse para ser utilizado con ajax
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
     $mensaje = null;
@@ -136,7 +137,7 @@ if (isset($_GET['eliminar'])) {
                         <label class="form-label">Detalle:</label>
                         <textarea class="form-control" require placeholder="Detalle el pedido" name="detalle"><?php echo $row_p['Detalle']; ?></textarea>
                     </div>
-                    <!-- FIXME - no se pudo desarollar la inserción de imagenes con dropzone -->
+                    <!-- FIXME - Incorporar que sau bes puedan quitar o añador imagenes a los pedidos -->
                     <!-- <div class="my-5 col-12 col-md-4">
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagen_carge">
                             Añadir imagenes

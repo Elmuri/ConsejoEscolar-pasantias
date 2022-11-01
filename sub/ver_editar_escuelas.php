@@ -1,5 +1,6 @@
 <?php
 include 'db/conexion.php';
+// FIXME - tendria que cambiarse para ser utilizado con ajax
 $escuela = $conn->prepare("SELECT * FROM escuelas where 1");
 $escuela->execute();
 $result_escuelas = $escuela->fetchAll();

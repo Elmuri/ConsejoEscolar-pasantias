@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    <!-- NOTE - navbar (Por pra aclarar si se cambia la carpeta de destino ConsejoEscolar-pasantias hay que cambiar las url absolutas del navbar) -->
     <nav class="navbar navbar-expand-lg bg-light shadow p-4">
         <div class="container-fluid">
             <a class="navbar-brand" href="/consejoEscolar-Pasantias/index.php">Consejo Escolar</a>
@@ -69,7 +70,7 @@
                         <?php endif; ?>
                     </div>
                 </ul>
-                <!-- FIXME - en desarollo -->
+                <!-- FIXME - Desarollar un buscador en el menu para buscar los pedidos -->
                 <!-- <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
@@ -88,8 +89,6 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- LINK - script toastify notficaciones -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>    
-    <!-- LINK - scripts custom -->
-    <!-- <script src="/src/js/main.js"></script>                         -->
 </body>
 
 </html>
