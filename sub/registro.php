@@ -1,73 +1,3 @@
-<?php
-
-    include './db/conexion.php';
-
-    if(isset($_POST['Registrarse'])){
-
-    $user=$_POST['user'];
-    $email=$_POST['correo'];
-    $correoConfirm=$_POST['correo_confirm'];
-    $pass=$_POST['pass'];
-    $pass_confirm= $_POST['pass_confirm'];
-    $tel=$_POST['tel'];
-
-    if($pass != $pass_confirm){
-        echo "<script>alert('Las contraseñas no concuerdan')</script>";
-        header('refresh:1s;');
-        return;
-    }
-    $password = password_hash($_POST['pass'], PASSWORD_DEFAULT);
-
-     if($email != $correoConfirm){
-        echo "<script>alert('Los correos no concuerdan')</script>";
-        header('refresh:1s;');
-        return;
-    }
-
-    $sql=$conn->prepare('INSERT INTO users (user, pass, telefono, correo) VALUES (?, ?, ?, ?) ');
-    $sql->bindParam(1,$user);
-    
-    $sql->bindParam(2,$password);
-    $sql->bindParam(3,$tel);
-    $sql->bindParam(4,$email);
-    // verificacion para que no aya datos repetidos
-        $usuarios = $conn->prepare("SELECT * FROM users where 1");
-        $usuarios->execute();
-        $result_users = $usuarios->fetchAll();
-
-        $u = null;
-        
-        if (is_countable($result_users)) {
-            if (count($result_users) != 0) {
-                $u = $result_users;
-            }
-        }
-
-        foreach ($u as $row_u) :
-            if ($_POST['tel'] == $row_u['telefono']) {
-                echo "<script>alert('El numero de telefono ya fue utilizado')</script>";
-                header('refresh:1;');
-                return;
-            }
-            if ($_POST['user'] == $row_u['user']) {
-                echo "<script>alert('El usuario ya fue utilizado')</script>";
-                header('refresh:1;');
-                return;
-            }
-            if ($_POST['correo'] == $row_u['correo']){
-                echo "<script>alert('El correo ya fue utilizado')</script>";
-                header('refresh:1;');
-                return;
-            }
-        endforeach;
-        if ($sql->execute()) {
-            echo '<script>alaert("Se creó el usuario correctamente");</script>';
-            $message = 'Se creó el usuario correctamente';
-            header('Location:login.php');
-        }       
- 
-    }
-?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -98,10 +28,13 @@
                 <input type="text" class="form-control" require name="tel">
             </div>
             <div class="d-flex justify-content-center">
-                <input type="submit" name="Registrarse" value="Registrarse">
+                <input type="submit" class="btn btn-primary" id="Registrarse" name="Registrarse" value="Registrarse">
             </div>
         </form>
     </div>
+    <!-- LINK - scrips -->
+    <script src="../src/js/jQuery.js"></script>
+    <script src="../src/js/Registro.js"></script>
 </body>
 
 </html>

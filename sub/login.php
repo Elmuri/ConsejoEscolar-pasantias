@@ -45,9 +45,6 @@
                 <input type="submit" class="btn btn-primary" id="Ingresar" name="Ingresar" value="Ingresar">
             </div>
         </form>
-        <div class="conteiner" id="erorr_view">
-
-        </div>
     </div>
     <!-- LINK - scrips -->
     <script src="../src/js/jQuery.js"></script>
