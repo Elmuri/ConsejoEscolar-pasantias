@@ -11,7 +11,7 @@ $(document).on('submit', '#form_log', function (event) {
         }
     })
         .done(function (respuesta) {
-            // console.log(respuesta)
+            console.log(respuesta)
             if (!respuesta["error"] == true) {
                 Toastify({
                     text: "Inicio de sesion exitoso! iniciando sistema...",
@@ -59,7 +59,7 @@ $(document).on('submit', '#form_log', function (event) {
             }
     })
     .fail(function (resp) {
-        // console.log(resp)        
+        console.log(resp)        
         Toastify({
             text: resp[mensaje],
             duration: 4000,

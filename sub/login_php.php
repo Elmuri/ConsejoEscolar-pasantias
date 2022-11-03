@@ -21,11 +21,7 @@ $password = $_POST['pass'];
 $pass_db = password_hash($password, PASSWORD_DEFAULT);
 $stmt = $conn->prepare("SELECT * FROM `users` WHERE correo=:correo");
 $stmt->bindParam(':correo', $_POST['correo']);
-if($stmt->execute()){
-    $message = 'El correo .';
-    echo json_encode(array('error' => true, 'mensaje' => $message));
-    return;
-}
+$stmt->execute();
 $results = $stmt->fetch(PDO::FETCH_ASSOC);
 if (password_verify($password, $results['pass'])) {
     session_start();
